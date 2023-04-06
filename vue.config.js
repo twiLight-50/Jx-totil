@@ -21,15 +21,15 @@ module.exports = {
       .tap(options => Object.assign(options, { limit: 10000 }))
 
     // 开启IP域名访问
-    // config.devServer.disableHostCheck(true)
+    config.devServer.disableHostCheck(true)
   },
-  devServer: {
-    port: 8080,
-    host: '127.0.0.1',
-    https: false,
-    open: true,
-    allowedHosts: 'all'
-  },
+  // devServer: {
+  //   port: 8080,
+  //   host: '127.0.0.1',
+  //   https: false,
+  //   open: true,
+  //   allowedHosts: 'all'
+  // },
   configureWebpack: {
     externals: {
       qc: 'QC'
