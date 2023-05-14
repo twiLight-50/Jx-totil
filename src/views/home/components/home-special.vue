@@ -3,7 +3,7 @@
     <template v-slot:right><JxMore /></template>
     <div ref="target" class="special-list">
       <div class="special-item" v-for="item in specialList" :key="item.id">
-        <RouterLink to="/">
+        <RouterLink :to="`product/${item.id}`">
           <img :src="item.cover" alt />
           <div class="meta">
             <p class="title">
